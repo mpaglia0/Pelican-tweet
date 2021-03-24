@@ -69,11 +69,11 @@ def post_on_twitter(settings, new_posts):
     try:
         api.VerifyCredentials()
     except:
-        print('error authenticating to Twitter')
+        print('Social-Media: error while authenticating on Twitter...')
         return False
 
     limit = 275 # actually 280 but let's account for some bugs and miscalculations
-    message = 'new post on darktable.org:\n%s\n%s'
+    message = 'PUT HERE YOUR MESSAGE!'
 
     for article in new_posts:
         url = article.get_siteurl() + '/' + article.url
