@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+
 """
-Post new posts to social media
-=====================================
-Post to Twitter, Facebook and G+ whenever a new blog or news post gets added
-For now only Twitter is supported
+Post new posts on Twitter
+=========================
 """
 
 import string
@@ -58,7 +57,7 @@ def post_on_twitter(settings, new_posts):
     access_token_secret = settings.get('TWITTER_ACCESS_TOKEN_SECRET', '')
 
     if consumer_key == '' or consumer_secret == '' or access_token_key == '' or access_token_secret == '':
-        print('Twitter credentials not configured')
+        print('Social-Media: Twitter credentials not configured...')
         return False
 
     api = twitter.Api(consumer_key = consumer_key,
