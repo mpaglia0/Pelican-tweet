@@ -1,1 +1,1 @@
-from .social-media import *
+from .pelican-tweet import *
