@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Post new posts on Twitter
-=========================
+Post new articles on Twitter
+============================
 """
 
 import string
@@ -19,7 +19,7 @@ import twitter
 
 def read_sitemap():
     try:
-        with open('posted_to_social_media.txt', 'r') as f:
+        with open('posted_on_Twitter.txt', 'r') as f:
             result = map(string.rstrip, f)
     except IOError:
       result = []
@@ -28,7 +28,7 @@ def read_sitemap():
 
 def write_sitemap(sitemap):
     sitemap.sort()
-    with open('posted_to_social_media.txt', 'w') as f:
+    with open('posted_on_Twitter.txt', 'w') as f:
         for article in sitemap:
             f.write("%s\n" % article)
 
