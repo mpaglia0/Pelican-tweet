@@ -57,7 +57,7 @@ def post_on_twitter(settings, new_posts):
     access_token_secret = settings.get('TWITTER_ACCESS_TOKEN_SECRET', '')
 
     if consumer_key == '' or consumer_secret == '' or access_token_key == '' or access_token_secret == '':
-        print('Social-Media: Twitter credentials not configured...')
+        print('Pelican-tweet: Twitter credentials not configured...')
         return False
 
     api = twitter.Api(consumer_key = consumer_key,
@@ -68,7 +68,7 @@ def post_on_twitter(settings, new_posts):
     try:
         api.VerifyCredentials()
     except:
-        print('Social-Media: error while authenticating on Twitter...')
+        print('Pelican-tweet: error while authenticating on Twitter...')
         return False
 
     limit = 275 # actually 280 but let's account for some bugs and miscalculations
