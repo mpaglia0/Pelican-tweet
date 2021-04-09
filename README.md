@@ -24,3 +24,5 @@ TWITTER_ACCESS_TOKEN_SECRET = ''
 ```
 
 You can follow [this guide](https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/) in order to understand the correct procedure to obtain these information from Twitter developers area.
+
+To re-tweet anything you have simply to cancel the relevant URL from `posted_on_Twitter.txt` file and run `pelican content`.
