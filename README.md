@@ -8,11 +8,11 @@ Hacked from [darktable-dtorg](https://github.com/darktable-org/dtorg).
 
 *Pelican-tweet* will scan your `content` directory for articles (i.e. all ecxept pages)
 
-On first run it creates a file called `posted_on_Twitter.txt` in your Pelican working directory entering the URLs of all articles found. All these URLs will be posted on Twitter.
+On first run it creates a file called `posted_on_Twitter.txt` in your Pelican working directory entering the URLs of all articles found. All these URLs will be posted immediatly on Twitter.
 
-On every further runs it match the actual articles list with the list in `posted_on_Twitter.txt` file and writes on it the new articles found (and posts new articles on Twitter).
+On every further run it matchs the actual articles list with the list in `posted_on_Twitter.txt` file and writes on it the new articles found (and posts new articles on Twitter).
 
-## Twittre APIs
+## Twitter APIs
 
 In order to publish on Twitter you need to enter in `pelicanconf.py` the following information:
 
