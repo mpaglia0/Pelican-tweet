@@ -17,7 +17,7 @@ from pelican import signals
 import twitter
 
 
-def read_sitemap():
+def read_articleslist():
     try:
         with open('posted_on_Twitter.txt', 'r') as f:
             result = map(string.rstrip, f)
@@ -26,10 +26,10 @@ def read_sitemap():
     return result
 
 
-def write_sitemap(sitemap):
-    sitemap.sort()
+def write_articleslist(articleslist):
+    articleslist.sort()
     with open('posted_on_Twitter.txt', 'w') as f:
-        for article in sitemap:
+        for article in articleslist:
             f.write("%s\n" % article)
 
 def shorten(message, limit, replacement = u' …'):
@@ -86,18 +86,18 @@ def post_on_twitter(settings, new_posts):
 
 
 def post_updates(generator, writer):
-    sitemap = read_sitemap()
+    articleslist = read_articleslist()
     new_posts = []
     for article in generator.articles:
-        if article.url not in sitemap:
+        if article.url not in articleslist:
             new_posts.append(article)
 
     # we only write the newly found sites to disk if posting them worked. that way we can retry later
     if new_posts:
         if post_on_twitter(generator.settings, new_posts):
             for article in new_posts:
-                sitemap.append(article.url)
-            write_sitemap(sitemap)
+                articleslist.append(article.url)
+            write_articleslist(articleslist)
 
 
 def register():
