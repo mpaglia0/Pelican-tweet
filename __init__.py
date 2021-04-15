@@ -1,1 +1,1 @@
-from .pelican-tweet import *
+from .pelican_tweet import *
