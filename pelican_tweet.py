@@ -20,7 +20,7 @@ import twitter
 def read_articleslist():
     try:
         with open('posted_on_Twitter.txt', 'r') as f:
-            result = map(string.rstrip, f)
+            result = map(string.rstrip(), f)
     except IOError:
       result = []
     return result
