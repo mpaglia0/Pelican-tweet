@@ -1,4 +1,4 @@
-# Pelican-tweet
+# Pelican-tweet (WIP)
 
 A Pelican plugin for automatically publish new posts on Twitter
 
