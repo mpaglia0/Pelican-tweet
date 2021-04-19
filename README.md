@@ -8,7 +8,7 @@ Hacked from [darktable-dtorg](https://github.com/darktable-org/dtorg).
 
 *Pelican-tweet* will read your `sitemap.xml` file for articles (i.e. all items except pages)
 
-On its first run it creates a file called `posted_on_Twitter.txt` in your Pelican working directory.
+On its first run it creates a file called `posted_on_Twitter.txt` in your Pelican root directory.
 
 Then it tries to post all found articles to Twitter and - if post routine returns no errors, writes article URL in `posted_on_Twitter.txt`.
 
