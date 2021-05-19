@@ -67,7 +67,7 @@ def post_on_twitter(settings, new_posts):
       return False
 
    limit = 275 # actually 280 but let's account for some bugs and miscalculations
-   message = 'Nuovo articolo su MaurizioPaglia.it: %s\n%s\n'
+   message = 'Put_here_your_message: %s\n%s\n'
 
    for article in new_posts:
       url = article.get_siteurl() + '/' + article.url
