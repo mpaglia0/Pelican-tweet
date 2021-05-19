@@ -6,7 +6,7 @@ Hacked from [darktable-dtorg](https://github.com/darktable-org/dtorg).
 
 ## How it works
 
-*Pelican-tweet* will read your `sitemap.xml` file for articles (i.e. all items except pages)
+*Pelican-tweet* will search your contents for articles (i.e. all items except pages) NOT in `draft` status.
 
 On its first run it creates a file called `posted_on_Twitter.txt` in your Pelican root directory.
 
@@ -16,7 +16,7 @@ On every further run it matchs the actual articles list with the list in `posted
 
 ## Twitter APIs
 
-In order to publish on Twitter you need to enter in `pelicanconf.py` the following information:
+In order to publish on Twitter you need to enter in `publishconf.py` the following information:
 
 ``` python
 TWITTER_CONSUMER_KEY = ''
