@@ -4,6 +4,8 @@ A Pelican plugin for automatically publish new posts on Twitter
 
 Hacked from [darktable-dtorg](https://github.com/darktable-org/dtorg).
 
+Needs Python > 3.0
+
 ## How it works
 
 *Pelican-tweet* will search your contents for articles (i.e. all items except pages) NOT in `draft` status.
