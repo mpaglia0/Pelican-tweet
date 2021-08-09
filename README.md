@@ -8,13 +8,13 @@ Needs Python > 3.0
 
 ## How it works
 
-*Pelican-tweet* will search your contents for articles (i.e. all items except pages) NOT in `draft` status.
+*Pelican-tweet* will search your contents for articles (actually all items except pages) that are not in `draft` status.
 
 On its first run it creates a file called `posted_on_Twitter.txt` in your Pelican root directory.
 
-Then it tries to post all found articles to Twitter and - if post routine returns no errors, writes article URL in `posted_on_Twitter.txt`.
+Then it tries to post all eligible articles to Twitter and - if post routine returns no errors - writes article URL in `posted_on_Twitter.txt`.
 
-On every further run it matchs the actual articles list with the list in `posted_on_Twitter.txt` file and posts new articles on Twitter (and writes them in `posted_on_Twitter.txt`).
+On every further run it matchs the actual articles list with the list in `posted_on_Twitter.txt` file and posts only new articles on Twitter (and writes them in `posted_on_Twitter.txt`).
 
 ## Twitter APIs
 
