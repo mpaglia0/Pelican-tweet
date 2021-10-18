@@ -14,7 +14,7 @@ On its first run it creates a file called `posted_on_Twitter.txt` in your Pelica
 
 Then it tries to post all eligible articles to Twitter and - if post routine returns no errors - writes article URL in `posted_on_Twitter.txt`.
 
-On every further run it matchs the actual articles list with the list in `posted_on_Twitter.txt` file and posts only new articles on Twitter (and writes them in `posted_on_Twitter.txt`).
+On every further run it matches the actual articles list with the list in `posted_on_Twitter.txt` file and posts only new articles (and writes them in `posted_on_Twitter.txt`).
 
 ## Twitter APIs
 
