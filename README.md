@@ -8,7 +8,7 @@ Needs Python > 3.0
 
 ## How it works
 
-*Pelican-tweet* will search your contents for articles (actually all items except pages) that are not in `draft` status.
+*Pelican-tweet* will search your contents for articles (actually ALL contents except pages) that are not in a `draft` status.
 
 On its first run it creates a file called `posted_on_Twitter.txt` in your Pelican root directory.
 
