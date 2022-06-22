@@ -28,3 +28,5 @@ TWITTER_ACCESS_TOKEN_SECRET = ''
 ```
 
 You can follow [this guide](https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/) in order to understand the correct procedure to obtain these information from Twitter developers area.
+
+This plugin depends on [python-twitter](https://code.google.com/archive/p/python-twitter/).
