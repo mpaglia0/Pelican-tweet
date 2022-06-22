@@ -1,1 +1,1 @@
-pelican-twitter
+python-twitter
