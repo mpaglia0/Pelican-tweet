@@ -1,5 +1,7 @@
 # Pelican-tweet
 
+:warning: owing to the new policies followed by Twitter this plugin could work no more. Anyway the support to this plugin has been discontinued.
+
 A Pelican plugin for automatically publish new posts on Twitter
 
 Hacked from [darktable-dtorg](https://github.com/darktable-org/dtorg).
